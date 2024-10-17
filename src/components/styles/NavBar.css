@@ -1,0 +1,173 @@
+:root {
+  --textColor: #fef9f2;
+  --mainColor: #3fa2f6;
+  --black: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header .nav-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.searchInput {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  border: 1px solid #000;
+  outline: none;
+}
+
+.languageContainer {
+  display: flex;
+  align-items: center;
+}
+
+#languageSelector {
+  border: none;
+  background-color: transparent;
+}
+
+.getStartedBtn {
+  background-color: var(--mainColor);
+  padding: 15px;
+  border-radius: 5rem;
+  width: 10rem;
+  text-align: center;
+  font-size: 17px;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.responsive_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.menuImg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.logo {
+  margin-right: 5%;
+}
+
+.separator {
+  display: none;
+}
+
+.loginBtn {
+  font-size: 17px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+@media only screen and (max-width: 1115px) {
+  header .nav-btn {
+    display: block;
+  }
+
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .loginContainer {
+    gap: 5rem;
+    position: absolute;
+    bottom: 5rem;
+  }
+
+  .getStartedBtn {
+    background-color: var(--textColor);
+    color: var(--mainColor);
+    font-weight: bold;
+  }
+
+  .loginBtn {
+    color: var(--textColor);
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  #languageSelector {
+    font-size: 20px;
+  }
+
+  #languageSelector option {
+    color: var(--black);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header .menuImg {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  header .logo {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  header {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header .menuImg {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header {
+    display: block;
+  }
+}
