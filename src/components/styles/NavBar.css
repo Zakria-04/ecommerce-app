@@ -40,6 +40,7 @@ header .nav-btn {
 #languageSelector {
   border: none;
   background-color: transparent;
+  outline: none;
 }
 
 .getStartedBtn {
@@ -83,6 +84,7 @@ header .nav-btn {
   font-size: 17px;
   text-decoration: none;
   color: var(--black);
+  width: max-content;
 }
 
 @media only screen and (max-width: 1115px) {
